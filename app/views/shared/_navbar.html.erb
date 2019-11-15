@@ -1,0 +1,22 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <img src="../assets/images/cheers.png" alt="logo">
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <%= link_to "Home", cocktails_path, class: "navbar-wagon-item navbar-wagon-link" %>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><%= link_to "Home", cocktails_path %></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

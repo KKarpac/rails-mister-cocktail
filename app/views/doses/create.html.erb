@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <h1>Doses#edit</h1>
+      <p>Find me in app/views/doses/edit.html.erb</p>
+
+      <%= simple_form_for(@dose) do |f| %>
+        <%= f.input :description %>
+        <%= f.input :amount %>
+        <%= f.input :ingredient_id, collection: Ingredient.all %>
+        <%= f.button :submit, class: "btn btn-primary"  %>
+      <% end %>
+    </div>
+  </div>
+</div>

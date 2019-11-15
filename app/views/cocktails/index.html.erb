@@ -2,3 +2,17 @@
   <h1>Cocktailious</h1>
   <span id="dynamic-text"></span>
 </div>
+
+<div class="container">
+  <h2>Here are your saved cocktails:</h2>
+    <ul>
+    <% @cocktails.each do |cocktail| %>
+    <li><%= link_to cocktail.name, cocktail_path(cocktail)%></li>
+    <% end %>
+  </ul>
+  <%= link_to "Add new cocktail", new_cocktail_path %>
+</div>
+
+<div class="text-center padded">
+  <%= link_to "Create a cocktail", new_cocktail_path, class: "btn btn-primary" %>
+</div>
