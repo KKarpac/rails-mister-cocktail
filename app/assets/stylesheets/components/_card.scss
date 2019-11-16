@@ -20,8 +20,10 @@ a {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 40px;
 }
 
 h2 {
   font-family: 'Pacifico', cursive;
+  padding: 25px;
 }
