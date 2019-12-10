@@ -20,7 +20,8 @@ a {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-bottom: 40px;
+  grid-gap: 16px;
+  margin-bottom: 35px;
 }
 
 h2 {

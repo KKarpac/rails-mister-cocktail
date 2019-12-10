@@ -9,15 +9,6 @@
 <div class="container">
   <h2>Here are your saved cocktails:</h2>
     <% @cocktails.each do |cocktail| %>
-    <%
-=begin%>
- <% if cocktail.photo.size != 0 %>
-        <% picture_url = cl_image_path cocktail.photo[0].path %>
-      <% else %>
-        <% picture_url = (@pics[rand(@pics.size)]) %>
-      <% end %>
-<%
-=end%>
       <div class="cards">
         <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
        <%= link_to cocktail.name, cocktail_path(cocktail) %>
